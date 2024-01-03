@@ -1,0 +1,12 @@
+{% autoescape off %}
+
+Hi {{user.first_name}} ,
+
+{% if is_approved %}
+congratulations! Your restuarant has been approved by admin.
+{% else %}
+we're sorry you are not eligible for publishing your food menu on our marketplace for more details, Please contact support@onlinefood.com.
+{% endif %}
+
+
+{% endautoescape %}
